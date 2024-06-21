@@ -55,18 +55,18 @@ const Navbar = ({
              bg-gradient-to-b from-neutral-50
               to bg-neutral-400 bg-opacity-50"
         >
-          <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
-            Website Design
-          </div>
           <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">
-            Graphic Design
+            Ads
+          </div>
+          <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
+            Social Media
           </div>
 
           <div onClick={scrollToShopifyStores} className="hover:text-gray-50">
-            Shopify Stores
+            Desarrollo Web
           </div>
           <div onClick={scrollToBrands} className="hover:text-gray-50">
-            Brands
+            Marcas
           </div>
 
           <Link href="/pricing" className="hover:text-gray-50">
