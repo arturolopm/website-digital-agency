@@ -71,7 +71,7 @@ export default function Home() {
           Vamos a crear, crecer y <br /> creer!
         </div>
         <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
-          Soy Andrea Rios, experta en marketing digital. Mi misión es ayudarte a vender como un hp.
+          Soy Andrea Rios de PhemeLab, experta en marketing digital. Mi misión es ayudarte a vender como un hp.
         </p>
 
         <Link
