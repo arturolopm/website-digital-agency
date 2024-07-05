@@ -6,6 +6,7 @@ import { AlignJustify, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import DropDownMenu from "./drop-down-menu";
+import { usePathname } from "next/navigation"
 
 interface NavbarProps {
   scrollToWebsiteDesign: () => void;
@@ -31,7 +32,7 @@ const Navbar = ({
   const closeDropDown = () => {
     setIsDropDownVisible(false);
   };
-
+  const pathName = usePathname()
   return (
     <div>
       <div className="p-6 md:p-10 flex items-center justify-between z-50">
@@ -49,29 +50,36 @@ const Navbar = ({
         </div>
         <div
           className="cursor-pointer hidden 
-            md:flex space-x-10 items-center
-             text-slate-300 text-center 
-             bg-clip-text text-transparent 
-             bg-gradient-to-b from-neutral-50
-              to bg-neutral-400 bg-opacity-50"
+        md:flex space-x-10 items-center
+        text-slate-300 text-center 
+        bg-clip-text text-transparent 
+        bg-gradient-to-b from-neutral-50
+        to bg-neutral-400 bg-opacity-50"
         >
-          <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">
-            Ads
-          </div>
-          <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
-            Social Media
-          </div>
+          {pathName === "/" ?
 
-          <div onClick={scrollToShopifyStores} className="hover:text-gray-50">
-            Desarrollo Web
-          </div>
-          <div onClick={scrollToBrands} className="hover:text-gray-50">
-            Marcas
-          </div>
+            (
+              <>
+                <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">
+                  Ads
+                </div>
+                <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
+                  Social Media
+                </div>
 
-          <Link href="/pricing" className="hover:text-gray-50">
-            Planes
-          </Link>
+                <div onClick={scrollToShopifyStores} className="hover:text-gray-50">
+                  Desarrollo Web
+                </div>
+                <div onClick={scrollToBrands} className="hover:text-gray-50">
+                  Marcas
+                </div>
+
+                <Link href="/pricing" className="hover:text-gray-50">
+                  Planes
+                </Link>
+              </>
+            )
+            : <Link href={"/"} className="hover:text-gray-50">Inicio</Link>}
         </div>
 
         <div className="flex md:hidden">

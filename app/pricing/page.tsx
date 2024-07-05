@@ -14,7 +14,7 @@ const plans = [
     name: "Emprendedor",
     price: process.env.NEXT_PUBLIC_BASIC_PRICE,
     features: [
-      "Fully responsive on all screens",
+      "Diseño y ejecución de una campaña",
 
       "Design + Development",
 
@@ -84,7 +84,7 @@ const Pricing = () => {
 
       <div className="flex items-center justify-center flex-col   ">
         <div className="text-5xl pb-10 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500 bg-opacity-50">
-          Simple Pricing <br /> Choose your plan
+          Proceso simple <br /> Escoje tu plan
         </div>
         <div className="grid md:grid-cols-3 gap-6 px-6 md:w-4/5 2xl:w-3/4 cursor-pointer pb-20  items-start ">
           {plans.map((plan, index) => (
