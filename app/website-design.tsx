@@ -7,15 +7,15 @@ const WebsiteDesign = () => {
         <div className="text-white">
             <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
                 <div className="text-4xl  md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50">
-                    Manejo de <br /> social media
+                    Website Design <br /> that works
                 </div>
                 <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
-                    Construyamos una comunidad sólida alrededor de tu marca, gestiono tus redes sociales para que te conectes de manera auténtica y sobre todo, efectiva con tu audiencia.
+                    Creating, designing and developing websites that work for your business.
                 </p>
             </div>
 
-            <div className="grid grid-cols-2 items-center justify-center md:grid-cols-4 gap-4 py-10">
-                <div className=" col-span-2 grid gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-10">
+                <div className="grid gap-4">
                     <div>
                         <Image
                             width={500}
@@ -38,7 +38,7 @@ const WebsiteDesign = () => {
                             className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="" />
                     </div>
                 </div>
-                <div className="grid col-span-2 gap-4">
+                <div className="grid gap-4">
                     <div>
                         <Image
                             width={500}
